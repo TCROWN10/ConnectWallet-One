@@ -110,35 +110,35 @@ export default function ConnectWallet() {
   };
 
   return (
-    <div className="p-6 max-w-custom mx-auto bg-gradient-to-r from-purple-500 to-pink-500 text-transparent  text-foreground shadow-lg rounded-custom">
+    <div className="p-6 bg-gradient-to-t w-80 from-purple-500 to-pink-500 text-transparent rounded-lg text-foreground">
       <div className="flex flex-col space-y-3">
         <button
           onClick={connectWallet}
-          className="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded transition"
+          className="px-4 py-2 bg-black hover:bg-blue-800 text-white  transition"
         >
           Connect Wallet
         </button>
         <button
           onClick={disconnectWallet}
-          className="px-4 py-2 bg-red-500 hover:bg-red-600 text-white transition"
+          className="px-4 py-2 bg-black hover:bg-red-300 text-white transition"
         >
           Disconnect
         </button>
         <button
           onClick={() => switchChain("0x1")}
-          className="px-4 py-2 bg-green-500 hover:bg-green-600 text-white transition"
+          className="px-4 py-2 bg-black hover:bg-green-200 text-white transition"
         >
           Switch to Ethereum
         </button>
         <button
           onClick={addEthereumChain}
-          className="px-4 py-2 bg-purple-500 hover:bg-purple-600 text-white transition"
+          className="px-4 py-2 bg-black hover:bg-purple-300 text-white transition"
         >
           Add Lisk
         </button>
         <button
           onClick={() => sendETH("0xA1eE1Abf8B538711c7Aa6E2B37eEf1A48021F2bB", 0.000001)}
-          className="px-4 py-2 bg-yellow-400 hover:bg-yellow-600 text-white transition"
+          className="px-4 py-2 bg-black hover:bg-yellow-600 text-white transition"
         >
           Send ETH
         </button>
